@@ -46,6 +46,10 @@ Set your API key:
 export OPENAI_API_KEY=sk-...
 ```
 
+Prefer keeping the live model choice in `~/.codex/config.toml` or per-session flags.
+Model names change faster than workflow patterns, so this guide stays tier-based
+and only uses concrete model names as examples when necessary.
+
 ## oh-my-codex Compatibility
 
 Use [oh-my-codex.md](./oh-my-codex.md) as the ownership boundary when combining
@@ -113,20 +117,29 @@ codex --approval-mode on-failure "run tests and fix any failures"
 # Non-interactive CI mode
 codex -q --json --approval-mode never "generate a summary of recent changes"
 
-# Use a specific model
-codex --model gpt-4.1 "review this PR diff for security issues"
+# Use a stronger reasoning model only when the task needs it
+codex --model <deep-reasoning-model> "review this PR diff for security issues"
 ```
 
 ## Multi-Model Routing
 
-| Task type                | Recommended model   | Flag                   |
-| ------------------------ | ------------------- | ---------------------- |
-| Exploration, explanation | `o4-mini` (default) | —                      |
-| Complex architecture     | `o3`                | `--model o3`           |
-| Quick edits, formatting  | `gpt-4.1-mini`      | `--model gpt-4.1-mini` |
-| Full codebase reasoning  | `gpt-4.1`           | `--model gpt-4.1`      |
+Prefer stable tiers instead of hardcoding model names in team guidance:
+
+| Task type | Recommended tier | How to choose |
+| --- | --- | --- |
+| Exploration, explanation | Fast or balanced coding tier | Use the current default fast or balanced coding model from official OpenAI docs |
+| Quick edits, formatting | Fast tier | Optimize for speed and low cost |
+| Standard implementation | Balanced coding tier | Use your default coding model |
+| Complex architecture or debugging | Deep reasoning tier | Switch only when the task clearly needs stronger reasoning |
+| Full codebase review | Balanced or deep reasoning tier | Start balanced, escalate only if the task stalls |
 
 See [Multi-Model Routing pattern](../../patterns/multi-model-routing.md).
+
+As of today, the safest operational rule is:
+
+- keep the repository guidance tier-based
+- keep the actual model names in local config
+- periodically verify the current recommended coding models in official OpenAI docs
 
 ## Memory
 
@@ -147,6 +160,15 @@ codex --mcp-server filesystem --mcp-server github "list open PRs"
 ```
 
 See [config.toml](config.toml) for the reference MCP setup.
+
+Keep the always-on set small. A lean default usually looks like:
+
+- filesystem
+- git or GitHub
+- fetch or docs retrieval
+- one memory system if you actually use it
+
+Everything else should be project-specific or turned on only when needed.
 
 ## Task Orchestration
 

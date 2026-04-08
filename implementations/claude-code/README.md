@@ -14,6 +14,16 @@ Claude Code is Anthropic's official CLI and VSCode extension for Claude. It exce
 
 This implementation shows how to apply the toolkit patterns to Claude Code's architecture.
 
+The stable parts of Claude Code guidance are:
+
+- `CLAUDE.md` for repository behavior
+- hierarchical `settings.json` files for actual tool config
+- hooks for guardrails and automation
+- a small always-on plugin set
+- project-local memory and context files
+
+Keep model names and plugin choices in config. Keep workflow rules in `CLAUDE.md`.
+
 ## Quick Start
 
 ```bash
@@ -40,6 +50,22 @@ cp implementations/claude-code/skills/*.md ~/.claude/skills/
 # Start session
 claude
 ```
+
+## Settings Hierarchy
+
+Claude Code's official configuration surface is hierarchical:
+
+- `~/.claude/settings.json` for global settings
+- `.claude/settings.json` for project-shared settings
+- `.claude/settings.local.json` for local project settings that should not be committed
+
+Use `/config` inside Claude Code when you want to inspect or change settings interactively.
+
+Best practice:
+
+- keep global settings minimal
+- put team-shared behavior in project `CLAUDE.md`
+- put risky experiments in `.claude/settings.local.json`
 
 ## oh-my-claudecode Compatibility
 
@@ -244,6 +270,17 @@ if [[ "$TOOL_NAME" == "Bash" ]] && [[ ! -f .env ]]; then
 fi
 ```
 
+Additional hook events worth knowing:
+
+- `PostToolUse`
+- `SessionStart`
+- `UserPromptSubmit`
+- `SessionEnd`
+- `PreCompact`
+- `SubagentStop`
+
+Use hooks for guardrails and lightweight automation, not for hiding critical workflow logic that should live in `CLAUDE.md`.
+
 #### RTK: Token-Compressing Hook
 
 [RTK (Rust Token Killer)](https://github.com/rtk-ai/rtk) is a PreToolUse hook that
@@ -257,6 +294,35 @@ high-volume dev commands.
 brew install rtk
 rtk init -g   # installs hook + patches settings.json
 ```
+
+## Plugin and Tool Surface
+
+Keep the always-on surface small.
+
+A strong default is:
+
+- core Claude features
+- a small number of high-value plugins
+- project-local hooks
+- project-local memory
+
+Prefer on-demand skills and temporary tool activation over a large permanently enabled plugin set. This reduces noise, cost, and unexpected behavior drift.
+
+## Subagents
+
+Claude Code subagents should be treated as a scaling tool, not the default for every task.
+
+Use subagents when:
+
+- tasks are independent
+- the write surfaces are disjoint
+- the main agent can continue useful work in parallel
+
+Avoid subagents when:
+
+- the next step is blocked on the answer
+- the task is tightly coupled to the current local context
+- orchestration overhead exceeds the value of parallelism
 
 **Install and wire (Linux):**
 
