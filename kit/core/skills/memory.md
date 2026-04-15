@@ -3,15 +3,15 @@ name: memory
 description: Persist decisions, preferences, and project state across sessions using structured memory types
 triggers:
   - memory
-  - remember this
-  - save for next session
-  - persist
+  - lembre disso
+  - salve para a próxima sessão
+  - persistir
   - cross-session
 ---
 
 # Memory
 
-Sync important context to persistent storage so future sessions start informed.
+Sincronize contexto importante com armazenamento persistente para que sessões futuras comecem informadas.
 
 ## Memory Types
 

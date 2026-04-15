@@ -2,8 +2,8 @@
 name: context
 description: Optimize context window usage — compact stale data, compress via summarization, preserve active state
 triggers:
-  - optimize context
-  - context too large
+  - otimizar contexto
+  - contexto muito grande
   - compact
   - session slow
   - free up context
@@ -12,7 +12,7 @@ triggers:
 
 # Context
 
-Keep the context window focused on what matters right now.
+Mantenha a janela de contexto focada no que importa agora.
 
 ## When to Use
 
@@ -85,7 +85,7 @@ Drop first:
 
 ```text
 Before: ~N% used
-Compacted: <what was removed>
+Compacted: <o que foi removido>
 After: ~N% used
 Preserved: <key items kept>
 Checkpoint: <file path if saved>

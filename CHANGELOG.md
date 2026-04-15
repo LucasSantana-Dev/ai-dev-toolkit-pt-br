@@ -1,12 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+Todas as mudanças relevantes deste projeto serão documentadas neste arquivo.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [Unreleased]
+## [Não lançado]
 
-### Added
+### Adicionado
 
 - 4 new portable skills and patterns from AI engineering curriculum (Phases 13, 16, 17):
   - `kit/core/skills/mcp-patterns.md` — MCP server implementation: tool schema design,
@@ -71,7 +71,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   summarize, checkpoint), context prioritization ranking, and 80% capacity
   hard-checkpoint rule
 
-### Fixed
+### Corrigido
 
 - `scripts/reconcile-backlog-state.mjs` no longer reports 8 `no-undef` errors
   for `process` and `console` — the ESLint config now covers `.mjs` files and
