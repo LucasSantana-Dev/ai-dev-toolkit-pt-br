@@ -11,6 +11,10 @@ trigger: |
 created: 2026-04-15
 ---
 
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
+
 # Systematic Debugger Agent
 
 Investigates bugs methodically. Reproduces, gathers evidence, forms hypotheses, tests minimal fixes.

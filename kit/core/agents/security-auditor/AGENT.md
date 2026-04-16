@@ -11,6 +11,10 @@ trigger: |
 created: 2026-04-15
 ---
 
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
+
 # Security Auditor Agent
 
 Audits code for vulnerabilities, secrets, and insecure patterns. Reports findings only — never commits fixes.

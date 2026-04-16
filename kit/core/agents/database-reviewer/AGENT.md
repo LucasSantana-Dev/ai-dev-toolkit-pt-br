@@ -11,6 +11,10 @@ trigger: |
 created: 2026-04-15
 ---
 
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
+
 # Database Reviewer Agent
 
 Reviews database schemas, migrations, and queries for correctness, performance, and data safety.

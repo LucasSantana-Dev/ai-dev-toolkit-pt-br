@@ -1,5 +1,3 @@
-> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
-
 ---
 name: checkpoint
 description: Git-level WIP safety net. Stashes uncommitted work, tags, and pushes to remote
@@ -10,6 +8,10 @@ triggers:
   - wip backup
   - stash backup
 ---
+
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
 
 # Checkpoint
 

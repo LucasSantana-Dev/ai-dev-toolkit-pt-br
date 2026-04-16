@@ -11,6 +11,10 @@ trigger: |
 created: 2026-04-15
 ---
 
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
+
 # Code Reviewer Agent
 
 Reads code changes and flags severity-rated issues without making edits.

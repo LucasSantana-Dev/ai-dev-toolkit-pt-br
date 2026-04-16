@@ -11,6 +11,10 @@ trigger: |
 created: 2026-04-15
 ---
 
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
+
 # Ultrathink Debugger Agent
 
 Deep-reasoning debugger for complex, multi-layered bugs. Traces 3+ levels down before proposing a fix.

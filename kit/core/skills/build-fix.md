@@ -1,5 +1,3 @@
-> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
-
 ---
 name: build-fix
 description: Local build-error triage. Detects common compile errors and suggests fixes
@@ -10,6 +8,10 @@ triggers:
   - compile fail
   - module not found
 ---
+
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
 
 # Build Fix
 

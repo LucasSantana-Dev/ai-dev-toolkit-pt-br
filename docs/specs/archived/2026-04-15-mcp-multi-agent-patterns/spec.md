@@ -1,5 +1,3 @@
-> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
-
 ---
 status: shipped
 created: 2026-04-15
@@ -8,6 +6,10 @@ pr: 49
 tags: shipped
 shipped: 2026-04-15
 ---
+
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
 
 # mcp-multi-agent-patterns
 

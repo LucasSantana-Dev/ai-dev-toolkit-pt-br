@@ -1,5 +1,3 @@
-> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
-
 ---
 name: ticket
 description: Assemble a Jira/Linear/GitHub-Issue body from recent commits, diff, and branch context
@@ -10,6 +8,10 @@ triggers:
   - what did we ship
   - ticket summary
 ---
+
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
 
 # Ticket
 

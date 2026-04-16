@@ -1,5 +1,3 @@
-> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
-
 ---
 name: plugin-audit
 description: Diff the Anthropic `claude-plugins-official` marketplace against installed plugins and surface the delta, filtering known-unwanted entries (language LSPs you don't use, SaaS integrations you don't use, sample/demo plugins).
@@ -9,6 +7,10 @@ triggers:
   - "check anthropic marketplace"
   - "plugin delta"
 ---
+
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
 
 # plugin-audit
 

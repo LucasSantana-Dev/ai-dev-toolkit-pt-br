@@ -1,5 +1,3 @@
-> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
-
 ---
 status: proposed
 created: 2026-04-15
@@ -7,6 +5,10 @@ owner: lucassantana
 pr: 
 tags: docs,guides
 ---
+
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
 
 # ai-guides-agents-migration
 

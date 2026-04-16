@@ -1,5 +1,3 @@
-> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
-
 ---
 name: bilingual-readme-sync
 description: Keep EN/PT README.md pairs in parity across a repo (and across twin repos like ai-dev-toolkit + ai-dev-toolkit-pt-br).
@@ -9,6 +7,10 @@ triggers:
   - "mirror pt-br readme"
   - "update README.pt-BR"
 ---
+
+> **Tradução pendente** — conteúdo em inglês, aguardando tradução para pt-BR. Ver `bilingual-readme-sync` skill.
+
+
 
 # bilingual-readme-sync
 
