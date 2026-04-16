@@ -8,6 +8,8 @@ primitive: mixed
 
 **Contexto + Padrões + Gates = Qualidade Repetível**
 
+> **Extras da branch pessoal:** esta branch inclui as skills `handoff` + `resume` para continuidade entre sessões Claude ↔ Codex. Veja `kit/core/skills/handoff*.md`. Não disponível na `main` por questões de governança.
+
 O pilar AAD garante que cada resposta da IA respeite as normas do seu projeto antes da primeira palavra ser escrita.
 
 ---

@@ -8,6 +8,8 @@ primitive: agent
 
 **Comando → Agent → Orquestração de Skills**
 
+> **Extras da branch pessoal:** esta branch inclui agents de handoff entre sessões e a skill `resume` para continuidade Claude ↔ Codex. Veja `kit/core/skills/handoff*.md`. Excluído da `main` para manter o kit sem acoplamento a CLI de vendor específico.
+
 Rotear tarefas complexas para a persona correta. Agents escolhem suas próprias ferramentas.
 
 ---
