@@ -7,4 +7,4 @@ triggers:
   - sync toolkit-setup version
 ---
 
-**Tradução pendente** — veja [versão em inglês](../../../en/kit/core/skills/toolkit-version-check.md).
+**Tradução pendente.** A versão em inglês saiu do [forgekit](https://github.com/LucasSantana-Dev/forgekit).

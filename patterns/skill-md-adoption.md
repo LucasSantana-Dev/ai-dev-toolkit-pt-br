@@ -4,7 +4,7 @@ description: Vendor-neutral unit-of-procedural-knowledge spec enabling cross-too
 tags: [skills, standards, discoverability]
 ---
 
-> **Tradução pendente.** Consulte a versão em inglês em [patterns/skill-md-adoption.md](https://github.com/lucassantana-dev/ai-dev-toolkit/blob/main/patterns/skill-md-adoption.md).
+> **Tradução pendente.** Consulte a versão em inglês em [packages/core/patterns/skill-md-adoption.md](https://github.com/LucasSantana-Dev/forgekit/blob/main/packages/core/patterns/skill-md-adoption.md).
 
 # SKILL.md Adoption: Vendor-Neutral Skill Discovery
 
